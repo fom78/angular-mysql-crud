@@ -1,6 +1,9 @@
 export default {
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'proyecto'
+    database: {
+        host: 'localhost',
+        user: 'rootang',
+        password: '123456',
+        database: 'proyecto'
+    }
+
 }

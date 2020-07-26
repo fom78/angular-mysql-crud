@@ -20,7 +20,7 @@ class Server {
         this.app.set('port', process.env.PORT || 3000); // Puerto dado por host o 3000
         this.app.use(morgan('dev')); // monitoreamos peticiones y demas
         this.app.use(cors());
-        this.app.use(express.json());
+        this.app.use(express.json()); // midlesware, hace que obtengamos en req.body un json
         this.app.use(express.urlencoded({extended: false}));
     }
 
