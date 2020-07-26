@@ -1,5 +1,7 @@
 import { Router } from 'express';
 
+import { gamesController } from './controllers/gamesController';
+
 class GamesRoutes {
 
     public router: Router = Router();
@@ -9,7 +11,7 @@ class GamesRoutes {
 
     config(){
         // creamos ruta para la app
-        this.router.get('/', (req, res) => res.send('Hola desde games'));
+        this.router.get('/', gamesController.index);
     }
 }
 
